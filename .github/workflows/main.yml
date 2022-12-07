@@ -7,7 +7,9 @@ jobs:
       - name: downloading repo
         uses: actions/checkout@v3
       - name: install vitest
-        run: npm install vitest
+        run: |
+          npm install vitest
+          npm i --save-dev vitest
       - name: initating the testing
-        run: vitest --run 
+        run: vitest run 
           
