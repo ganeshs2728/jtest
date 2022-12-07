@@ -1,6 +1,6 @@
 name: jtest testing
 on: workflow_dispatch
-jons:
+jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
@@ -12,3 +12,4 @@ jons:
       - name: initating the testing
         run: |
           npm test
+          
