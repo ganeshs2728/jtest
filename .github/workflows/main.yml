@@ -6,8 +6,15 @@ jobs:
     steps:
       - name: downloading repo
         uses: actions/checkout@v3
-      - name: install vitest
-        run: npm ci
+      - name: Install dependencies
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
       - name: initating the testing
         run: npm test
           
