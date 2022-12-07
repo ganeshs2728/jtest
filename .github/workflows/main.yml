@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: downloading repo
         uses: actions/checkout@v3
+      - name: install jtest
+        run: |
+          npm install jtest
       - name: initating the testing
         run: |
           npm test
