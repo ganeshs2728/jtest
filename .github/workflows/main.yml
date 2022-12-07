@@ -11,5 +11,5 @@ jobs:
           npm install vitest
           npm i --save-dev vitest
       - name: initating the testing
-        run: vitest run 
+        run: npm test
           
