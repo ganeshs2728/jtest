@@ -9,6 +9,7 @@ jobs:
       - name: install jtest
         run: |
           npm install jtest
+          npm install vitest
       - name: initating the testing
         run: |
           vitest --run --reporter verbose
