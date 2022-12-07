@@ -11,5 +11,5 @@ jobs:
           npm install jtest
       - name: initating the testing
         run: |
-          npm test
+          vitest --run --reporter verbose
           
