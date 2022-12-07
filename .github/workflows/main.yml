@@ -6,9 +6,6 @@ jobs:
     steps:
       - name: downloading repo
         uses: actions/checkout@v3
-      - name: initating the npm
-        run: |
-          npm ci
       - name: initating the testing
         run: |
           npm test
