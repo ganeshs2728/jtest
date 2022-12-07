@@ -6,10 +6,8 @@ jobs:
     steps:
       - name: downloading repo
         uses: actions/checkout@v3
-      - name: install jtest
-        run: |
-          npm install vitest
+      - name: install vitest
+        run: npm install vitest
       - name: initating the testing
-        run: |
-          vitest --run --reporter verbose
+        run: vitest --run 
           
