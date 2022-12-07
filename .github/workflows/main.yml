@@ -8,7 +8,6 @@ jobs:
         uses: actions/checkout@v3
       - name: install jtest
         run: |
-          npm install jtest
           npm install vitest
       - name: initating the testing
         run: |
