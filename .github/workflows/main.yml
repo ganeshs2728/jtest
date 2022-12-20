@@ -20,5 +20,5 @@ jobs:
       - name : Sending email
         run : |
           sudo apt install mpack 
-          mpack -s "we are sending test email" email_address ganeshsonawane5896@gmail.com
+          mpack -s "we are sending test email" ganeshsonawane5896@gmail.com
   
