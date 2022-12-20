@@ -13,4 +13,4 @@ jobs:
       - name : Sending email
         run : |
           sudo apt install mailutils -y
-          echo "test body of the email" | mail -s 'test subject' ganesh.sonawane.9942@gmail.com
+          echo "test body of the email" | mail -s 'test subject' ganeshsonawane5896@gmail.com
