@@ -10,4 +10,8 @@ jobs:
         run: npm install
       - name: initating the testing
         run: npm test
+      - name : Sending email
+        run : |
+          sudo apt install mailutils -y
+          mail –s "Test Email from the workflow jtest" ganesh.sonawane.9942@gmail.com
           
